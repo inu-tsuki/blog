@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>月华庭</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css">
+    <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
+    <script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
+    <script src="https://unpkg.com/turndown-plugin-gfm/dist/turndown-plugin-gfm.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/font/iconfont.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body class="index-page">
+
+    <!-- 头部 -->
+    <header class="site-header">
+        <div class="header-content">
+            <h1>月华庭</h1>
+            <p>疑是地上霜</p>
+        </div>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">月华庭</a></li>
+            <li><a href="archive.html">月明</a></li>
+            <li><a href="workspace.html">月晦</a></li>
+            <li><a href="post.html?id=1751731200000">月影</a></li>
+        </ul>
+    </nav>
+
+    <!-- 内容区 -->
+    <main id="index" class="main-content">
+        <section id="hero-section" class="hero-section">
+            <!--             <img src="../imgs/moon.jpg" alt="月亮" class="hero-image"> -->
+            <div class="hero-content">
+                <h2>欢迎来到月华庭</h2>
+                <p>坐下来看看月亮吧</p>
+            </div>
+
+            <!-- === 图片链接控件容器 === -->
+            <div class="hero-links-container" id="hero-links-container">
+                <!-- JS会在这里动态填充分类链接卡片 -->
+            </div>
+        </section>
+
+        <section class="featured-posts">
+            <h2>亮月相</h2>
+            <div class="featured-posts-container">
+                <!-- JS会在这里填充精选文章卡片 -->
+            </div>
+        </section>
+
+        <section class="latest-posts">
+            <h2>新月相</h2>
+            <div class="post-list-container">
+                <!-- JS会在这里填充最新文章列表 -->
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+        <p>2025 月华庭</p>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" title="返回顶部" class="fade-in hidden "><span class="iconfont icon-back-to-top"></span></button>
+
+    <!-- 脚本 -->
+    <script src="../js/main.js"></script>
+
+    <!-- 链接卡片模板 -->
+    <div id="link-preview-card" class="link-preview-card">
+        <!-- 内容将由JS动态填充 -->
+    </div>
+
+    <!-- === 全局底部弹出通知容器 === -->
+    <div id="toast-notification" class="toast-notification">
+        <span id="toast-message"></span>
+    </div>
+</body>
+
+</html>

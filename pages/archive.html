@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>月明</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css">
+    <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
+    <script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
+    <script src="https://unpkg.com/turndown-plugin-gfm/dist/turndown-plugin-gfm.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/font/iconfont.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body class="archive-page">
+
+    <!-- 头部 -->
+    <header class="site-header">
+
+        <div class="header-content">
+            <h1>月明</h1>
+            <p>举头望明月</p>
+        </div>
+
+    </header>
+
+
+
+    <!-- 导航栏 -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">月华庭</a></li>
+            <li><a href="archive.html">月明</a></li>
+            <li><a href="workspace.html">月晦</a></li>
+            <li><a href="post.html?id=1751731200000">月影</a></li>
+        </ul>
+    </nav>
+
+    <!-- 内容 -->
+    <main id="archive" class="main-content">
+
+        <h2>全月相</h2>
+
+
+        <!-- === 包裹所有筛选控件的粘性容器 === -->
+        <div id="archive-filters-sticky-wrapper">
+            <!-- === 归档页标签页导航 === -->
+            <div class="archive-tabs  workspace-tabs"> <!-- 复用 workspace-tabs 的样式 -->
+                <button class="archive-tab workspace-tab active" data-category-id="all">全部分类</button>
+                <!-- JS会在这里动态填充其他分类的标签 -->
+            </div>
+
+            <!-- === 归档页筛选控件 === -->
+            <div id="add-filter-control" class="sort-and-search-controls add-filter-control">
+                <!-- === 高级搜索构建器 === -->
+                <div class="search-container">
+                    <!-- 文本搜索框 -->
+                    <input type="search" id="search-input" class="search-input" placeholder="搜索标题和内容...">
+                </div>
+                <div class="sort-container">
+                    <select id="sort-by-select">
+                        <option value="date">发布时间</option>
+                        <option value="votes">点赞数</option>
+                        <option value="views">浏览数</option>
+                        <option value="comments">评论数</option>
+                    </select>
+                    <select id="order-by-select">
+                        <option value="asc">升序</option>
+                        <option value="desc">降序</option>
+                    </select>
+                </div>
+                <!-- 添加高级筛选的“+”按钮 -->
+                <button id="add-filter-btn" class="action-btn">+</button>
+                <!-- UI构建器将在这里动态弹出 -->
+            </div>
+            <div class="filter-status-container hidden">
+                <!-- 结构化筛选条件的“胶囊”容器 -->
+                <div id="filter-pills-container" class="filter-pills-container">
+                    <span id="active-filer" class="active-filters-container"></span>
+                    <!-- JS会在这里填充筛选条件胶囊 -->
+                </div>
+            </div>
+        </div>
+
+
+
+        </div>
+
+
+        <!-- === 归档页内容区 === -->
+        <div class="archive-content">
+            <!-- 这个容器将用于显示所有视图的内容 -->
+            <div id="archive-post-list" class="post-list-container">
+                <!-- JS 动态加载文章列表 -->
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+        <p>2025 月华庭</p>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" title="返回顶部" class="fade-in hidden "><span class="iconfont icon-back-to-top"></span></button>
+
+    <!-- 脚本 -->
+    <script src="../js/main.js"></script>
+    <!-- 链接卡片模板 -->
+    <div id="link-preview-card" class="link-preview-card">
+        <!-- 内容将由JS动态填充 -->
+    </div>
+
+    <!-- === 全局底部弹出通知容器 === -->
+    <div id="toast-notification" class="toast-notification">
+        <span id="toast-message"></span>
+    </div>
+</body>
+
+</html>

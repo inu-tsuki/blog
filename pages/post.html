@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>月华</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css">
+    <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
+    <script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
+    <script src="https://unpkg.com/turndown-plugin-gfm/dist/turndown-plugin-gfm.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/font/iconfont.css">
+    <style>
+        /* 详情页的特定样式 */
+        .post-full-content {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+        }
+
+        .post-full-content img {
+            max-width: 100%;
+            /* 让大图也能响应式 */
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body class="post-page">
+
+    <!-- 头部 -->
+    <header class="site-header">
+        <div class="header-content">
+            <h1>月华</h1>
+        </div>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">月华庭</a></li>
+            <li><a href="archive.html">月明</a></li>
+            <li><a href="workspace.html">月晦</a></li>
+            <li><a href="post.html?id=1751731200000">月影</a></li>
+        </ul>
+    </nav>
+
+    <!-- 内容区 -->
+    <main id="post" class="main-content">
+        <section class="post-full-content" id="post-full-content">
+
+        </section>
+
+        <section class="comments-section">
+            <h3>评论区</h3>
+            <div id="comments-list">
+                <!-- JS 动态填充评论 -->
+            </div>
+            <div id="main-comment-form-container" class="comment-form-wrapper">
+                <form id="comment-form">
+                    <h4>发表你的看法</h4>
+                    <!-- 不再需要 author 输入框，因为我们会从 currentUser 获取 -->
+                    <textarea id="comment-text" placeholder="写下你的评论..." required></textarea>
+                    <button type="submit">提交评论</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer-toolbar">
+        <div class="toolbar-content">
+            <!-- 返回顶部按钮 -->
+
+            <!-- 内容将由JS动态填充 -->
+        </div>
+    </div>
+    <!-- 页脚 -->
+    <footer class="site-footer">
+        <p>2025 月华庭</p>
+    </footer>
+
+    <!-- 脚本 -->
+    <script src="../js/main.js"></script>
+    <!-- 链接卡片模板 -->
+    <div id="link-preview-card" class="link-preview-card">
+        <!-- 内容将由JS动态填充 -->
+    </div>
+
+    <!-- === 全局底部弹出通知容器 === -->
+    <div id="toast-notification" class="toast-notification">
+        <span id="toast-message"></span>
+    </div>
+</body>
+
+</html>

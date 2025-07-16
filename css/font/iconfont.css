@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4944182 */
+  src: url('iconfont.woff2?t=1751801147288') format('woff2'),
+       url('iconfont.woff?t=1751801147288') format('woff'),
+       url('iconfont.ttf?t=1751801147288') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-exit:before {
+  content: "\e6d9";
+}
+
+.icon-multiselect:before {
+  content: "\e684";
+}
+
+.icon-back-to-top:before {
+  content: "\e603";
+}
+
+.icon-leftarrow:before {
+  content: "\e616";
+}
+
+.icon-rightarrow:before {
+  content: "\e623";
+}
+
+.icon-uparrow:before {
+  content: "\e624";
+}
+
+.icon-a-DownArrow:before {
+  content: "\e606";
+}
+
+.icon-icon_exercise_submit:before {
+  content: "\e604";
+}
+
+.icon-view:before {
+  content: "\e847";
+}
+
+.icon-upvote2:before {
+  content: "\e6c0";
+}
+
+.icon-edit:before {
+  content: "\e9da";
+}
+
+.icon-upvote:before {
+  content: "\e622";
+}
+
+.icon-downvote:before {
+  content: "\e77b";
+}
+
+.icon-upvote1:before {
+  content: "\e843";
+}
+
+.icon-comment:before {
+  content: "\e728";
+}
+
+.icon-star:before {
+  content: "\e80f";
+}
+
+.icon-star1:before {
+  content: "\e7df";
+}
+
+.icon-trashcan:before {
+  content: "\e898";
+}
+
