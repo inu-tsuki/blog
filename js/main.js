@@ -361,7 +361,7 @@ document.addEventListener('DOMContentLoaded', function () {
             lastUpdated: null,
             imageUrl: "",
             editorType: "markdown",
-            content: "这是计科2班，学号2023463030421的汪俊名制作的个人博客网页。使用了HTML、CSS、JavaScript技术。\n",
+            content: "这是戌月制作的个人博客网页。使用了HTML、CSS、JavaScript技术。\n",
             tags: [
                 "关于"
             ],
